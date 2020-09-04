@@ -1,0 +1,54 @@
+Unidad 1
+* Objetos y Mensajes
+  - Todo es un mensaje, un numero, un literal, un objeto
+  - Cada objeto es distinto, y es unico
+  - Los objetos se comunican entre ellos mediante mensajes
+  - Un mensaje siempre devuelve algo
+* Interfaz
+  - COnjunto de mensajes que un objeto puede entender (metodos)
+    Ej. energia(), cantar()
+* Efecto
+  - Algunos mensajes pueden producir efecto (setter)
+  - Si hace efecto no devuelve nada
+Si hace efecto, no devuelve nada
+* Argumentos
+  - Para mandar mensajes con un valor especifico
+
+Unidad 2
+* Declarar Objetos
+  Declarar un objeto es crear un objeto
+** Ejemplos
+  #+BEGIN_SRC 
+  object nombre{
+  }
+  #+END_SRC
+* Metodos
+  - Se lo denominan *accessors*
+** Tipos de metodos
+    - setter para hacer efecto (cambios)
+    - getter para consultar (devuelven algo)
+** Ejemplos
+  #+BEGIN_SRC java
+  object persona{
+  method saludar(){
+    return "hola"
+  }
+  }
+  #+END_SRC
+* Atributos
+  - El conjunto de atributos se llama *estado interno* 
+  -
+** Ejemplos 
+  #+BEGIN_SRC java 
+  object persona{
+  var energia = 100
+
+  method comer(){
+    energia = energia + 100
+  }
+  }
+  #+END_SRC
+
+* Referencia Self
+  - Para usar *metodos* propios del objeto cuando *delegamos*
+  - para mandarse  mensajes un objeto a si mismo 
